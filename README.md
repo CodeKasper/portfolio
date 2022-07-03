@@ -3,7 +3,7 @@
 Hermosa plantilla HTML, <br />responsiva
 hecha con tailwindcss.
 
-<a https://codekasper.github.io/portfolio/><strong>➥ Live Demo</strong></a>
+<a href="https://codekasper.github.io/portfolio/"><strong>➥ Live Demo</strong></a>
  </div>
 <br />
 
