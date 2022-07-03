@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f9004d" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Portfolio Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-jdblack font-poppins">
+    <header>
+        <nav class="fixed z-20 top-0 left-0 right-0 bg-jdwhite backdrop-blur-sm blur-[4px] filter-none py-2 shadow-sm">
+            <div class="mx-auto flex justify-between items-center px-6 md:px-9 lg:px-16">
+                <a class="text-jdred uppercase font-bold text-xl flex justify-center items-center" href="index.html">
+                    <picture>
+                        <source srcset="img/avatar.avif" type="image/avif">
+                        <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
+                        <img width="250" height="250" loading="lazy" src="img/avatar.jpg" alt="Logotipo"
+                            class="h-8 w-8 rounded-full">
+                    </picture>
+                    Dev<span class="text-white lowercase font-light">eloper</span>
+                </a>
+
+                <ul class="relative hidden md:flex space-x-6">
+                    <li><a class="nav-link transition-{color} duration-300 ease-in" href="#home">Home</a></li>
+                    <li><a class="nav-link transition-{color} duration-300 ease-in" href="#services">Services</a></li>
+                    <li><a class="nav-link transition-{color} duration-300 ease-in" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li><a class="nav-link transition-{color} duration-300 ease-in" href="#blog">Blog</a></li>
+                    <li><a class="nav-link transition-{color} duration-300 ease-in" href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Mobile menu icon -->
+                <button id="mobile-icon" class="md:hidden flex">
+                    <i class="fa-solid fa-bars text-white" id="bars"></i>
+                </button>
+                <!-- Mobile menu icon end-->
+
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="md:hidden flex justify-center w-72">
+                <div id="mobile-menu" class="mobile-menu absolute top-[48px] w-72 z-40">
+                    <ul class="bg-jdblack shadow-lg leading-9 font-bold h-screen py-7">
+                        <li
+                            class="font-thin transition-{color} duration-300 ease-in text-gray-400 hover:text-gray-600 pl-4">
+                            <a href="#home" class="block pl-7 py-2.5 uppercase">Home</a>
+                        </li>
+                        <li
+                            class="font-thin transition-{color} duration-300 ease-in text-gray-400 hover:text-gray-600 pl-4">
+                            <a href="#services" class="block pl-7 py-2.5 uppercase">Services</a>
+                        </li>
+                        <li
+                            class="font-thin transition-{color} duration-300 ease-in text-gray-400 hover:text-gray-600 pl-4">
+                            <a href="#portfolio" class="block pl-7 py-2.5 uppercase">Portfolio</a>
+                        </li>
+                        <li
+                            class="font-thin transition-{color} duration-300 ease-in text-gray-400 hover:text-gray-600 pl-4">
+                            <a href="#blog" class="block pl-7 py-2.5 uppercase">Blog</a>
+                        </li>
+                        <li
+                            class="font-thin transition-{color} duration-300 ease-in text-gray-400 hover:text-gray-600 pl-4">
+                            <a href="#contact" class="block pl-7 py-2.5 uppercase">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Mobile menu end-->
+        </nav> <!-- Nav end-->
+    </header> <!-- Header end-->
+    <main class="mx-auto px-5 md:px-9 lg:px-16 xl:px-36 2xl:px-52">
+        <section id="home"
+            class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-20 items-center pt-24 xl:pt-32 2xl:pt-44">
+            <div class="order-1 mt-10 md:mt-0">
+                <div class="border-l-4 border-jdred relative">
+                    <div class="pl-3 5">
+                        <span class="text-jdred font-semibold text-lg"> Hi 👋, my name is </span>
+                        <h2 class="text-white text-3xl lg:text-4xl xl:text-5xl font-bold">Jhon Doe</h2>
+                        <p class="text-gray-400 2xl:text-xl leading-relaxed">I’m a web developer
+                            Perspiciatis recusandae iste officia Assumenda voluptas quasi perferendis.</p>
+                    </div>
+                </div>
+                <div class="mt-12 flex">
+
+                    <span class="relative inline-flex">
+                        <button download="" type="button"
+                            class="inline-flex items-center px-3 font-semibold leading-6 text-sm shadow rounded-md transition ease-in-out duration-150 text-white bg-zinc-900 hover:bg-opacity-50">
+                            <i class="fas fa-download mr-2"></i>
+                            Download Cv
+                        </button>
+                        <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-jdred opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-jdred"></span>
+                        </span>
+                    </span>
+
+                    <a role="button" target="_blank" aria-label="github" href="#"
+                        class="flex items-center justify-center ml-2 w-9 h-9 rounded-md transition ease-in-out duration-150 text-white bg-zinc-900 hover:bg-opacity-50">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a role="button" target="_blank" aria-label="codepen" href="#"
+                        class="flex items-center justify-center ml-2 w-9 h-9 rounded-md transition ease-in-out duration-150 text-white bg-zinc-900 hover:bg-opacity-50">
+                        <i class="fab fa-codepen text-lg"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative order-2">
+                <div class="relative">
+                    <picture>
+                        <source srcset="img/data-hero.avif" type="image/avif">
+                        <source srcset="img/data-hero.webp" type="image/webp">
+                        <img class="w-full" loading="lazy" width="250" height="250" src="img/data-hero.png"
+                            alt="data hero">
+                    </picture>
+                </div>
+                <ul class="absolute top-0 left-0 w-full h-full rounded-full">
+                    <li class="animate-floating flex items-center justify-center absolute right-14" title="react"><img
+                            src="img/react.svg" alt="react logo" loading="lazy">
+                    </li>
+                    <li class="flex items-center justify-center absolute right-14 bottom-20 animate-floating2"
+                        title="sass"><img src="img/sass.svg" alt="sass logo" loading="lazy">
+                    </li>
+                    <li class="flex items-center justify-center absolute left-14 bottom-32 animate-floating"
+                        title="tailwind"><img src="img/tailwind.svg" alt="tailwind logo" loading="lazy"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="services" class="relative py-10 md:py-14 lg:py-16">
+            <div class="flex flex items-center justify-center mt-12">
+                <div
+                    class="inline-block relative mb-4 bg-gradient-to-r from-rose-900 shadow-2xl shadow-pink-500/30 rounded-md py-1 px-3">
+                    <h1 class="pl-2 font-semibold uppercase text-xl relative text-white">Services</h1>
+                </div>
+            </div>
+            <ol class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <li class="flex">
+                    <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
+                        src="img/services/icon-design.svg" alt="icon services">
+                    <div class="ml-6">
+                        <h2 class="flex items-center text-sm font-semibold leading-6"><span
+                                class="text-white">01</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
+                                class="ml-2 text-white">Web Design</span></h2>
+                        <p class="mt-2 text-sm leading-7 text-gray-400">Dignissimos sit nobis voluptatum vitae sint
+                            corrupti harum unde repellendus aut ipsum, netatibus libero est neque incidunt.</p>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
+                        src="img/services/icon-dev.svg" alt="icon services">
+                    <div class="ml-6">
+                        <h2 class="flex items-center text-sm font-semibold leading-6"><span
+                                class="text-white">02</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
+                                class="ml-2 text-white">Web Development</span></h2>
+                        <p class="mt-2 text-sm leading-7 text-gray-400">Dignissimos sit nobis voluptatum vitae sint
+                            corrupti harum unde repellendus aut ipsum, netatibus libero est neque incidunt.</p>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
+                        src="img/services/icon-mobile.svg" alt="icon services">
+                    <div class="ml-6">
+                        <h2 class="flex items-center text-sm font-semibold leading-6"><span
+                                class="text-white">03</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
+                                class="ml-2 text-white">Mobile Apps</span></h2>
+                        <p class="mt-2 text-sm leading-7 text-gray-400">Dignissimos sit nobis voluptatum vitae sint
+                            corrupti harum unde repellendus aut ipsum, netatibus libero est neque incidunt.</p>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
+                        src="img/services/icon-rocket.svg" alt="icon services">
+                    <div class="ml-6">
+                        <h2 class="flex items-center text-sm font-semibold leading-6"><span
+                                class="text-white">04</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
+                                class="ml-2 text-white">Seo</span></h2>
+                        <p class="mt-2 text-sm leading-7 text-gray-400">Dignissimos sit nobis voluptatum vitae sint
+                            corrupti harum unde repellendus aut ipsum, netatibus libero est neque incidunt.</p>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
+                        src="img/services/icon-note.svg" alt="icon services">
+                    <div class="ml-6">
+                        <h2 class="flex items-center text-sm font-semibold leading-6"><span
+                                class="text-white">05</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
+                                class="ml-2 text-white">Copy Write</span></h2>
+                        <p class="mt-2 text-sm leading-7 text-gray-400">Dignissimos sit nobis voluptatum vitae sint
+                            corrupti harum unde repellendus aut ipsum, netatibus libero est neque incidunt.</p>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
+                        src="img/services/icon-bubbles.svg" alt="icon services">
+                    <div class="ml-6">
+                        <h2 class="flex items-center text-sm font-semibold leading-6"><span
+                                class="text-white">06</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
+                                class="ml-2 text-white">Support</span></h2>
+                        <p class="mt-2 text-sm leading-7 text-gray-400">Dignissimos sit nobis voluptatum vitae sint
+                            corrupti harum unde repellendus aut ipsum, netatibus libero est neque incidunt.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="portfolio" class="relative py-10 md:py-14 lg:py-16">
+            <div class="flex flex items-center justify-center mt-12">
+                <div
+                    class="inline-block relative mb-4 bg-gradient-to-r from-rose-900 shadow-2xl shadow-pink-500/30 rounded-md py-1 px-3">
+                    <h1 class="pl-2 font-semibold uppercase text-xl relative text-white">Portfolio</h1>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-20 mt-16">
+                <div class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
+                    <div class="relative rounded-2xl h-full">
+                        <picture>
+                            <source srcset="img/project1.avif" type="image/avif">
+                            <source srcset="img/project1.webp" type="image/webp">
+                            <img class="max-h-80 h-full rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+                                loading="lazy" width="200" height="300" src="img/project1.jpg" alt="image project">
+                        </picture>
+                        <a class="flex justify-center items-center bg-black bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 group-hover:opacity-100"
+                            href="https://beauty-spa.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <span
+                                class="group transition ease-in-out duration-150 ml-2 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center text-jdred mr-3 hover:bg-jdred hover:text-white">
+                                <i class="fa-solid fa-eye"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!--item portfolio-->
+                <div class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
+                    <div class="relative rounded-2xl h-full">
+                        <picture>
+                            <source srcset="img/project2.avif" type="image/avif">
+                            <source srcset="img/project2.webp" type="image/webp">
+                            <img class="max-h-80 h-full rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+                                loading="lazy" width="200" height="300" src="img/project2.jpg" alt="image project">
+                        </picture>
+                        <a class="flex justify-center items-center bg-black bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 group-hover:opacity-100"
+                            href="https://cafe-jotadev.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <span
+                                class="group transition ease-in-out duration-150 ml-2 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center text-jdred mr-3 hover:bg-jdred hover:text-white">
+                                <i class="fa-solid fa-eye"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!--item portfolio-->
+                <div class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
+                    <div class="relative rounded-2xl h-full">
+                        <picture>
+                            <source srcset="img/project3.avif" type="image/avif">
+                            <source srcset="img/project3.webp" type="image/webp">
+                            <img class="max-h-80 h-full rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
+                                loading="lazy" width="200" height="300" src="img/project3.png" alt="image project">
+                        </picture>
+                        <a class="flex justify-center items-center bg-black bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 group-hover:opacity-100"
+                            href="https://marketing-kasper.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <span
+                                class="group transition ease-in-out duration-150 ml-2 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center text-jdred mr-3 hover:bg-jdred hover:text-white">
+                                <i class="fa-solid fa-eye"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!--item portfolio-->
+            </div>
+            <a class="text-sm border border-jdred w-max block mx-auto mt-16 xl:mt-10 py-2 px-3 text-jdred rounded-full" role="button" href="https://github.com/CodeKasper">
+                <i class="fab fa-github mr-2"></i><span>See more on Github</span>
+            </a>
+        </section>
+
+        <section id="blog" class="relative py-10 md:py-14 lg:py-16">
+            <div class="flex flex items-center justify-center mt-12">
+                <div
+                    class="inline-block relative mb-4 bg-gradient-to-r from-rose-900 shadow-2xl shadow-pink-500/30 rounded-md py-1 px-3">
+                    <h1 class="pl-2 font-semibold uppercase text-xl relative text-white">Blog</h1>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-20 mt-16">
+                <div class="relative rounded-md overflow-hidden mb-4">
+                    <picture>
+                        <source srcset="img/blog1.avif" type="image/avif">
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img width="250" height="250" loading="lazy" src="img/blog1.jpg" alt="imagen blog"
+                            class="w-full lg:h-64 mb-6">
+                    </picture>
+                    <a href="#"
+                        class="text-white transition ease-in-out duration-150 hover:text-jdred font-semibold my-3 text-xl">
+                        <h2>
+                            “Reprehenderit, dolorum nrum tenetur unde, gherwe placeat consectetur...”</h2>
+                    </a>
+                    <div class="mt-3 flex items-center font-sans" style="cursor: auto;">
+                        <div class="shrink-0">
+                            <a href="#">
+                                <span class="sr-only">Jhon Doe</span>
+                                <picture>
+                                    <source srcset="img/avatar.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
+                                    <img width="250" height="250" loading="lazy" src="img/avatar.jpg"
+                                        alt="imagen avatar" class="h-10 w-10 rounded-full cursor-auto">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="ml-3 text-white">
+                            <p class="text-sm font-medium">
+                                <a href="#" class="underline cursor-auto">Jhon Doe</a>
+                            </p>
+                            <div class="flex space-x-1 text-sm">
+                                <time datetime="2022-06-26">01 Julio, 2022</time>
+                                <span aria-hidden="true">·</span>
+                                <span>Hace 53 minutos</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div> <!-- item blog -->
+                <div class="relative rounded-md overflow-hidden mb-4>
+                    <picture>
+                        <source srcset="img/blog2.avif" type="image/avif">
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img width="250" height="250" loading="lazy" src="img/blog2.jpg" alt="imagen blog"
+                            class="w-full lg:h-64 mb-6">
+                    </picture>
+                    <a href="#"
+                        class="text-white transition ease-in-out duration-150 hover:text-jdred font-semibold my-3 text-xl">
+                        <h2>
+                            “Reprehenderit, dolorum nrum tenetur unde, gherwe placeat consectetur...”</h2>
+                    </a>
+                    <div class="mt-3 flex items-center font-sans" style="cursor: auto;">
+                        <div class="shrink-0">
+                            <a href="#">
+                                <span class="sr-only">Jhon Doe</span>
+                                <picture>
+                                    <source srcset="img/avatar.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
+                                    <img width="250" height="250" loading="lazy" src="img/avatar.jpg"
+                                        alt="imagen avatar" class="h-10 w-10 rounded-full cursor-auto">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="ml-3 text-white">
+                            <p class="text-sm font-medium">
+                                <a href="#" class="underline cursor-auto">Jhon Doe</a>
+                            </p>
+                            <div class="flex space-x-1 text-sm">
+                                <time datetime="2022-06-26">01 Julio, 2022</time>
+                                <span aria-hidden="true">·</span>
+                                <span>Hace 53 minutos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- item blog -->
+                <div class="relative rounded-md overflow-hidden mb-4">
+                    <picture>
+                        <source srcset="img/blog3.avif" type="image/avif">
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img width="250" height="250" loading="lazy" src="img/blog3.jpg" alt="imagen blog"
+                            class="w-full lg:h-64 mb-6">
+                    </picture>
+                    <a href="#"
+                        class="text-white transition ease-in-out duration-150 hover:text-jdred font-semibold my-3 text-xl">
+                        <h2>
+                            “Reprehenderit, dolorum nrum tenetur unde, gherwe placeat consectetur...”</h2>
+                    </a>
+                    <div class="mt-3 flex items-center font-sans" style="cursor: auto;">
+                        <div class="shrink-0">
+                            <a href="#">
+                                <span class="sr-only">Jhon Doe</span>
+                                <picture>
+                                    <source srcset="img/avatar.avif" type="image/avif">
+                                    <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
+                                    <img width="250" height="250" loading="lazy" src="img/avatar.jpg"
+                                        alt="imagen avatar" class="h-10 w-10 rounded-full cursor-auto">
+                                </picture>
+                            </a>
+                        </div>
+
+                        <div class="ml-3 text-white">
+                            <p class="text-sm font-medium">
+                                <a href="#" class="underline cursor-auto">Jhon Doe</a>
+                            </p>
+                            <div class="flex space-x-1 text-sm">
+                                <time datetime="2022-06-26">01 Julio, 2022</time>
+                                <span aria-hidden="true">·</span>
+                                <span>Hace 53 minutos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- item blog -->
+            </div>
+        </section>
+
+        <section id="contact" class="relative py-10 md:py-14 lg:py-16">
+            <div class="flex flex items-center justify-center mt-12">
+                <div
+                    class="inline-block relative mb-4 bg-gradient-to-r from-rose-900 shadow-2xl shadow-pink-500/30 rounded-md py-1 px-3">
+                    <h1 class="pl-2 font-semibold uppercase text-xl relative text-white">Contact Us</h1>
+                </div>
+            </div>
+            <div class="flex w-full min-h-screen justify-center items-center">
+                <div
+                    class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-zinc-900 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
+                    <div class="flex flex-col space-y-8 justify-evenly">
+                        <div>
+                            <p class="pt-2 text-indigo-100 text-sm">Blanditiis ratione nam ut possimus minima quo labore
+                                ipsum accusamus fugit quos dolore eveniet a distinctio!!</p>
+                        </div>
+                        <div class="flex flex-col space-y-6">
+                            <div class="inline-flex space-x-2 items-center">
+                                <i class="text-jdred fa-solid fa-phone"></i>
+                                <span>+1 (213) 666-2777</span>
+                            </div>
+                            <div class="inline-flex space-x-2 items-center">
+                                <i class="text-jdred fa-solid fa-envelope"></i>
+                                <span>correo@correo.com</span>
+                            </div>
+                            <div class="inline-flex space-x-2 items-center">
+                                <i class="text-jdred fa-solid fa-location-dot"></i>
+                                <span>Sacramento, California, USA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute z-0 w-40 h-40 bg-jdred rounded-full -right-28 -top-28"></div>
+                        <div class="absolute z-0 w-40 h-40 bg-jdred rounded-full -left-28 -bottom-16"></div>
+                        <div class="relative z-10 rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+                            <form class="flex flex-col space-y-4" action="">
+                                <div>
+                                    <label for="" class="text-sm text-white">Name</label>
+                                    <input type="text" placeholder="Name"
+                                        class="bg-transparent ring-1 ring-slate-900 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-slate-900 focus:ring-slate-900 focus:border-jdred">
+                                </div>
+                                <div>
+                                    <label for="" class="text-sm text-white">Email</label>
+                                    <input type="email" placeholder="Email"
+                                        class="bg-transparent ring-1 ring-slate-900 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-slate-900 focus:ring-slate-900 focus:border-jdred">
+                                </div>
+                                <div>
+                                    <label for="" class="text-sm text-white">Message</label>
+                                    <textarea placeholder="Message" rows="4"
+                                        class="bg-transparent ring-1 ring-slate-900 mt-2 w-full rounded-md px-4 py-2 outline-none focus:ring-slate-900 focus:ring-slate-900 focus:border-jdred"></textarea>
+                                </div>
+                                <button
+                                    class="inline-block self-end bg-jdred hover:bg-opacity-50 font-bold rounded-md px-3 py-1 uppercase text-sm text-white transition ease-in-out duration-150">Send
+                                    Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex justify-center relative py-5 bg-zinc-900 bg-opacity-70"><a
+            class="flex items-center justify-center rounded-full mx-auto absolute -top-5 w-10 h-10 border-2 bg-zinc-900 border-jdblack text-white"
+            role="button" href="#home" aria-label="Go to top"><i class="fa fa-arrow-up"></i></a>
+        <div>
+            <ul class="flex mt-5 w-max mx-auto">
+                <li
+                    class="group transition ease-in-out duration-150 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center mr-3 hover:bg-jdred">
+                    <a aria-label="Send Mail" href="mailto:youremail@gmail.com"
+                        class="text-jdred group-hover:text-white"><i class="far fa-envelope"></i></a>
+                </li>
+                <li
+                    class="group transition ease-in-out duration-150 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center mr-3 last:mr-0 hover:bg-jdred">
+                    <a class="text-jdred group-hover:text-white" href="https://facebook.com/username"
+                        aria-label="facebook-f logo"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li
+                    class="group transition ease-in-out duration-150 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center mr-3 last:mr-0 hover:bg-jdred">
+                    <a class="text-jdred group-hover:text-white" href="https://twitter.com/username"
+                        aria-label="twitter logo"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li
+                    class="group transition ease-in-out duration-150 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center mr-3 last:mr-0 hover:bg-jdred">
+                    <a class="text-jdred group-hover:text-white" href="https://instagram.com/username"
+                        aria-label="instagram logo"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li
+                    class="group transition ease-in-out duration-150 w-9 h-9 text-sm border border-jdred rounded-full flex items-center justify-center mr-3 last:mr-0 hover:bg-jdred">
+                    <a class="text-jdred group-hover:text-white" href="https://www.linkedin.com/in/username"
+                        aria-label="linkedin-in logo"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+            <p class="px-2 text-center text-gray-500 text-sm mt-5">Made With <i
+                    class="fa-solid fa-heart animate-pulse text-red-700"></i>
+                By
+                <a href="https://jotadev.netlify.app/" class="text-slate-500 hover:text-slate-800"
+                    target="_blank">JotaDev</a> © 2022 All rights reserved
+            </p>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
