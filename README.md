@@ -11,10 +11,10 @@ hecha con tailwindcss.
 
 ![Card Spa Desktop Demo](./img/desktop.jpg "Desktop Demo")
 
-### Contact
+### Contacto
 
-If you want to contact with me you can reach me at [Site Web](https://jotadev.netlify.app/).
+Si quieres contactar conmigo puedes localizarme en mi [sitio web](https://jotadev.netlify.app/).
 
-### License
+### Licencia
 
-This project is **free to use** and does not contains any license.
+Este proyecto es de **uso gratuito** y no contiene ninguna licencia.
