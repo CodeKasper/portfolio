@@ -1,6 +1,6 @@
 <h2 align="center">Portafolio Developer</h2>
 <div align="center">
-Hermosa plantilla HTML, <br />responsiva
+Hermosa plantilla responsiva <br />
 hecha con tailwindcss.
 
 <a href="https://codekasper.github.io/portfolio/"><strong>➥ Live Demo</strong></a>
