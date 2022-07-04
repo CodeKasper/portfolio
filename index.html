@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth overflow-x-hidden">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="favicon.png">
     <title>Portfolio Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="bg-jdblack font-poppins">
@@ -19,9 +19,9 @@
             <div class="mx-auto flex justify-between items-center px-6 md:px-9 lg:px-16">
                 <a class="text-jdred uppercase font-bold text-xl flex justify-center items-center" href="index.html">
                     <picture>
-                        <source srcset="img/avatar.avif" type="image/avif">
-                        <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
-                        <img width="250" height="250" loading="lazy" src="img/avatar.jpg" alt="Logotipo"
+                        <source srcset="./assets/img/avatar.avif" type="image/avif">
+                        <source loading="lazy" srcset="./assets/img/avatar.webp" type="image/webp">
+                        <img width="250" height="250" loading="lazy" src="./assets/img/avatar.jpg" alt="Logotipo"
                             class="h-8 w-8 rounded-full">
                     </picture>
                     Dev<span class="text-white lowercase font-light">eloper</span>
@@ -111,24 +111,36 @@
                     </a>
                 </div>
             </div>
+
+
             <div class="relative order-2">
-                <div class="relative">
-                    <picture>
-                        <source srcset="img/data-hero.avif" type="image/avif">
-                        <source srcset="img/data-hero.webp" type="image/webp">
-                        <img class="w-full" loading="lazy" width="250" height="250" src="img/data-hero.png"
-                            alt="data hero">
-                    </picture>
+                <div class="bg-slate-800 flex-none border-b border-slate-500/30">
+                    <div class="flex items-center h-8 space-x-1.5 px-3">
+                        <div class="w-2.5 h-2.5 bg-pink-600 rounded-full"></div>
+                        <div class="w-2.5 h-2.5 bg-yellow-600 rounded-full"></div>
+                        <div class="w-2.5 h-2.5 bg-green-600 rounded-full"></div>
+                    </div>
                 </div>
-                <ul class="absolute top-0 left-0 w-full h-full rounded-full">
+                <div class="relative">
+<pre class="font-light block bg-slate-800 text-jdred py-2 overflow-x-auto">
+    const data = {
+        <span class="text-teal-400">email:</span> <span class="text-amber-400">"john@doe.com"</span>,
+        <span class="text-teal-400">birthday:</span> <span class="text-amber-400">"June 23, 1990"</span>,
+        <span class="text-teal-400">phone:</span> <span class="text-amber-400">"+1 (213) 666-2777"</span>,
+        <span class="text-teal-400">location:</span> <span class="text-amber-400">"Sacramento, California, USA"</span>,
+        <span class="text-teal-400">web:</span> <span class="text-amber-400">"https://jotadev.netlify.app/"</span>
+        };
+</pre>
+                </div>
+                <ul class="">
                     <li class="animate-floating flex items-center justify-center absolute right-14" title="react"><img
-                            src="img/react.svg" alt="react logo" loading="lazy">
+                        width="250" height="250" src="./assets/img/react.svg" alt="react logo" loading="lazy" class="h-9 w-9">
                     </li>
-                    <li class="flex items-center justify-center absolute right-14 bottom-20 animate-floating2"
-                        title="sass"><img src="img/sass.svg" alt="sass logo" loading="lazy">
+                    <li class="flex items-center justify-center absolute right-0 top-0 animate-floating2"
+                        title="sass"><img width="250" height="250" src="./assets/img/sass.svg" alt="sass logo" loading="lazy" class="h-9 w-9">
                     </li>
-                    <li class="flex items-center justify-center absolute left-14 bottom-32 animate-floating"
-                        title="tailwind"><img src="img/tailwind.svg" alt="tailwind logo" loading="lazy"></li>
+                    <li class="flex items-center justify-center absolute left-0 -top-8 animate-floating"
+                        title="tailwind"><img width="250" height="250" src="./assets/img/tailwind.svg" alt="tailwind logo" loading="lazy" class="h-9 w-9"></li>
                 </ul>
             </div>
         </section>
@@ -143,7 +155,7 @@
             <ol class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <li class="flex">
                     <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
-                        src="img/services/icon-design.svg" alt="icon services">
+                        src="./assets/img/services/icon-design.svg" alt="icon services">
                     <div class="ml-6">
                         <h2 class="flex items-center text-sm font-semibold leading-6"><span
                                 class="text-white">01</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
@@ -154,7 +166,7 @@
                 </li>
                 <li class="flex">
                     <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
-                        src="img/services/icon-dev.svg" alt="icon services">
+                        src="./assets/img/services/icon-dev.svg" alt="icon services">
                     <div class="ml-6">
                         <h2 class="flex items-center text-sm font-semibold leading-6"><span
                                 class="text-white">02</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
@@ -165,7 +177,7 @@
                 </li>
                 <li class="flex">
                     <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
-                        src="img/services/icon-mobile.svg" alt="icon services">
+                        src="./assets/img/services/icon-mobile.svg" alt="icon services">
                     <div class="ml-6">
                         <h2 class="flex items-center text-sm font-semibold leading-6"><span
                                 class="text-white">03</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
@@ -176,7 +188,7 @@
                 </li>
                 <li class="flex">
                     <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
-                        src="img/services/icon-rocket.svg" alt="icon services">
+                        src="./assets/img/services/icon-rocket.svg" alt="icon services">
                     <div class="ml-6">
                         <h2 class="flex items-center text-sm font-semibold leading-6"><span
                                 class="text-white">04</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
@@ -187,7 +199,7 @@
                 </li>
                 <li class="flex">
                     <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
-                        src="img/services/icon-note.svg" alt="icon services">
+                        src="./assets/img/services/icon-note.svg" alt="icon services">
                     <div class="ml-6">
                         <h2 class="flex items-center text-sm font-semibold leading-6"><span
                                 class="text-white">05</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
@@ -198,7 +210,7 @@
                 </li>
                 <li class="flex">
                     <img class="h-11 w-11 flex-none overflow-visible" loading="lazy" width="200" height="300"
-                        src="img/services/icon-bubbles.svg" alt="icon services">
+                        src="./assets/img/services/icon-bubbles.svg" alt="icon services">
                     <div class="ml-6">
                         <h2 class="flex items-center text-sm font-semibold leading-6"><span
                                 class="text-white">06</span><span class="ml-2 h-4 w-px bg-slate-300"></span><span
@@ -218,13 +230,15 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-20 mt-16">
-                <div class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
+                <div
+                    class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
                     <div class="relative rounded-2xl h-full">
                         <picture>
-                            <source srcset="img/project1.avif" type="image/avif">
-                            <source srcset="img/project1.webp" type="image/webp">
+                            <source srcset="./assets/img/project1.avif" type="image/avif">
+                            <source srcset="./assets/img/project1.webp" type="image/webp">
                             <img class="max-h-80 h-full rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-                                loading="lazy" width="200" height="300" src="img/project1.jpg" alt="image project">
+                                loading="lazy" width="200" height="300" src="./assets/img/project1.jpg"
+                                alt="image project">
                         </picture>
                         <a class="flex justify-center items-center bg-black bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 group-hover:opacity-100"
                             href="https://beauty-spa.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -236,13 +250,15 @@
                     </div>
                 </div>
                 <!--item portfolio-->
-                <div class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
+                <div
+                    class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
                     <div class="relative rounded-2xl h-full">
                         <picture>
-                            <source srcset="img/project2.avif" type="image/avif">
-                            <source srcset="img/project2.webp" type="image/webp">
+                            <source srcset="./assets/img/project2.avif" type="image/avif">
+                            <source srcset="./assets/img/project2.webp" type="image/webp">
                             <img class="max-h-80 h-full rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-                                loading="lazy" width="200" height="300" src="img/project2.jpg" alt="image project">
+                                loading="lazy" width="200" height="300" src="./assets/img/project2.jpg"
+                                alt="image project">
                         </picture>
                         <a class="flex justify-center items-center bg-black bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 group-hover:opacity-100"
                             href="https://cafe-jotadev.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -254,13 +270,15 @@
                     </div>
                 </div>
                 <!--item portfolio-->
-                <div class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
+                <div
+                    class="transition duration-300 group transform hover:-translate-y-2 rounded-2xl cursor-pointer mb-4">
                     <div class="relative rounded-2xl h-full">
                         <picture>
-                            <source srcset="img/project3.avif" type="image/avif">
-                            <source srcset="img/project3.webp" type="image/webp">
+                            <source srcset="./assets/img/project3.avif" type="image/avif">
+                            <source srcset="./assets/img/project3.webp" type="image/webp">
                             <img class="max-h-80 h-full rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105"
-                                loading="lazy" width="200" height="300" src="img/project3.png" alt="image project">
+                                loading="lazy" width="200" height="300" src="./assets/img/project3.png"
+                                alt="image project">
                         </picture>
                         <a class="flex justify-center items-center bg-black bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 group-hover:opacity-100"
                             href="https://marketing-kasper.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -273,7 +291,8 @@
                 </div>
                 <!--item portfolio-->
             </div>
-            <a class="text-sm border border-jdred w-max block mx-auto mt-16 xl:mt-10 py-2 px-3 text-jdred rounded-full" role="button" href="https://github.com/CodeKasper">
+            <a class="text-sm border border-jdred w-max block mx-auto mt-16 xl:mt-10 py-2 px-3 text-jdred rounded-full"
+                role="button" href="https://github.com/CodeKasper">
                 <i class="fab fa-github mr-2"></i><span>See more on Github</span>
             </a>
         </section>
@@ -289,9 +308,9 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-20 mt-16">
                 <div class="relative rounded-md overflow-hidden mb-4">
                     <picture>
-                        <source srcset="img/blog1.avif" type="image/avif">
-                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
-                        <img width="250" height="250" loading="lazy" src="img/blog1.jpg" alt="imagen blog"
+                        <source srcset="./assets/img/blog1.avif" type="image/avif">
+                        <source loading="lazy" srcset="./assets/img/blog1.webp" type="image/webp">
+                        <img width="250" height="250" loading="lazy" src="./assets/img/blog1.jpg" alt="imagen blog"
                             class="w-full lg:h-64 mb-6">
                     </picture>
                     <a href="#"
@@ -304,9 +323,9 @@
                             <a href="#">
                                 <span class="sr-only">Jhon Doe</span>
                                 <picture>
-                                    <source srcset="img/avatar.avif" type="image/avif">
-                                    <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
-                                    <img width="250" height="250" loading="lazy" src="img/avatar.jpg"
+                                    <source srcset="./assets/img/avatar.avif" type="image/avif">
+                                    <source loading="lazy" srcset="./assets/img/avatar.webp" type="image/webp">
+                                    <img width="250" height="250" loading="lazy" src="./assets/img/avatar.jpg"
                                         alt="imagen avatar" class="h-10 w-10 rounded-full cursor-auto">
                                 </picture>
                             </a>
@@ -328,10 +347,10 @@
                 </div> <!-- item blog -->
                 <div class="relative rounded-md overflow-hidden mb-4>
                     <picture>
-                        <source srcset="img/blog2.avif" type="image/avif">
-                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
-                        <img width="250" height="250" loading="lazy" src="img/blog2.jpg" alt="imagen blog"
-                            class="w-full lg:h-64 mb-6">
+                        <source srcset=" ./assets/img/blog2.avif" type="image/avif">
+                    <source loading="lazy" srcset="./assets/img/blog2.webp" type="image/webp">
+                    <img width="250" height="250" loading="lazy" src="./assets/img/blog2.jpg" alt="imagen blog"
+                        class="w-full lg:h-64 mb-6">
                     </picture>
                     <a href="#"
                         class="text-white transition ease-in-out duration-150 hover:text-jdred font-semibold my-3 text-xl">
@@ -343,9 +362,9 @@
                             <a href="#">
                                 <span class="sr-only">Jhon Doe</span>
                                 <picture>
-                                    <source srcset="img/avatar.avif" type="image/avif">
-                                    <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
-                                    <img width="250" height="250" loading="lazy" src="img/avatar.jpg"
+                                    <source srcset="./assets/img/avatar.avif" type="image/avif">
+                                    <source loading="lazy" srcset="./assets/img/avatar.webp" type="image/webp">
+                                    <img width="250" height="250" loading="lazy" src="./assets/img/avatar.jpg"
                                         alt="imagen avatar" class="h-10 w-10 rounded-full cursor-auto">
                                 </picture>
                             </a>
@@ -366,9 +385,9 @@
                 </div> <!-- item blog -->
                 <div class="relative rounded-md overflow-hidden mb-4">
                     <picture>
-                        <source srcset="img/blog3.avif" type="image/avif">
-                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
-                        <img width="250" height="250" loading="lazy" src="img/blog3.jpg" alt="imagen blog"
+                        <source srcset="./assets/img/blog3.avif" type="image/avif">
+                        <source loading="lazy" srcset="./assets/img/blog3.webp" type="image/webp">
+                        <img width="250" height="250" loading="lazy" src="./assets/img/blog3.jpg" alt="imagen blog"
                             class="w-full lg:h-64 mb-6">
                     </picture>
                     <a href="#"
@@ -381,9 +400,9 @@
                             <a href="#">
                                 <span class="sr-only">Jhon Doe</span>
                                 <picture>
-                                    <source srcset="img/avatar.avif" type="image/avif">
-                                    <source loading="lazy" srcset="img/avatar.webp" type="image/webp">
-                                    <img width="250" height="250" loading="lazy" src="img/avatar.jpg"
+                                    <source srcset="./assets/img/avatar.avif" type="image/avif">
+                                    <source loading="lazy" srcset="./assets/img/avatar.webp" type="image/webp">
+                                    <img width="250" height="250" loading="lazy" src="./assets/img/avatar.jpg"
                                         alt="imagen avatar" class="h-10 w-10 rounded-full cursor-auto">
                                 </picture>
                             </a>
@@ -497,14 +516,14 @@
                 </li>
             </ul>
             <p class="px-2 text-center text-gray-500 text-sm mt-5">Made With <i
-                    class="fa-solid fa-heart animate-pulse text-red-700"></i>
+                    class="fa-solid fa-heart animate-pulse text-red-400"></i>
                 By
                 <a href="https://jotadev.netlify.app/" class="text-slate-500 hover:text-slate-800"
                     target="_blank">JotaDev</a> © 2022 All rights reserved
             </p>
         </div>
     </footer>
-    <script src="js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

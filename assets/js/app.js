@@ -28,3 +28,4 @@ document.addEventListener("DOMContentLoaded", function () {
     mobile_icon.addEventListener('click', openCloseMenu);
   
   }
+
