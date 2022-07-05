@@ -9,7 +9,7 @@ hecha con tailwindcss.
 
 ### Demo Screeshots
 
-![Card Spa Desktop Demo](./img/desktop.jpg "Desktop Demo")
+![Card Spa Desktop Demo](./assets/img/desktop.jpg "Desktop Demo")
 
 ### Contacto
 
