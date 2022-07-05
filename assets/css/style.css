@@ -735,9 +735,6 @@ select{
 .right-14{
   right: 3.5rem;
 }
-.-left-8{
-  left: -2rem;
-}
 .-top-8{
   top: -2rem;
 }
@@ -1097,9 +1094,6 @@ select{
 }
 .overflow-x-auto{
   overflow-x: auto;
-}
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 .scroll-smooth{
   scroll-behavior: smooth;
@@ -1640,18 +1634,4 @@ select{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-}
-::-webkit-scrollbar {
-  background-color: #1b2437;
-  height: 1rem;
-  width: 1rem;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #f9004d;
-  border: 0.2rem solid #1b2437;
-  border-radius: 0.5rem;
-}
-::selection {
-  background: #f9004d;
-  color: #ffffff;
 }
